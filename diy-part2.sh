@@ -13,15 +13,15 @@
 # Modify default IP
 sed -i 's/192.168.1.1/192.168.5.1/g' package/base-files/files/bin/config_generate
 
+# Modify hostname
+sed -i 's/OpenWrt/RAX3000m/g' package/base-files/files/bin/config_generate
+
 # Modify default theme
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
-# Modify hostname
-sed -i 's/ImmortalWrt/RAX3000m/g' package/base-files/files/bin/config_generate
-
 #修改wifi名称（mtwifi-cfg）
-sed -i 's/WHK_Telecom-2.4G/OpenWrt/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
-sed -i 's/WHK_Telecom/OpenWrt5G/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
+#sed -i 's/WHK_Telecom-2.4G/OpenWrt/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
+#sed -i 's/WHK_Telecom/OpenWrt5G/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
 
 #加入UA2F模块和RKP-IPID模块
 git clone https://github.com/EOYOHOO/UA2F.git package/UA2F
