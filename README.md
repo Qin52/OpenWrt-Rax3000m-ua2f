@@ -1,4 +1,4 @@
-# immortalwrt-mt7981-rax3000m_nand_256m 云编译仓库-防校园网版
+# mt7981-rax3000m_nand_256m 云编译仓库-防校园网版
 
 * 默认整合所有路由基础功能(`pppoe`、`ipv6`、`防火墙`等)，其他功能均会在`Release`简介处列出。
 * 默认会携带的插件为UA2F和RKP-IPID
