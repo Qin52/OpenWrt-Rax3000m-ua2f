@@ -22,7 +22,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/Qin52/lede-rax3000m-ua2f
+  REPO_URL: https://github.com/Qin52/lede-Rax3000m-256m-nand
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
   CONFIG_FILE: rax3000m_256m_230423.config
