@@ -24,7 +24,7 @@ sed -i 's/OpenWrt/RAX3000m/g' package/base-files/files/bin/config_generate
 #sed -i 's/WHK_Telecom/OpenWrt5G/g' package/mtk/applications/mtwifi-cfg/files/mtwifi.sh
 
 #加入UA2F模块和RKP-IPID模块以及nettask模块
-git clone https://github.com/Zxilly/UA2F.git package/UA2F
+git clone https://github.com/EOYOHOO/UA2F.git package/UA2F
 git clone https://github.com/EOYOHOO/rkp-ipid.git package/rkp-ipid
 #git clone https://github.com/lucikap/luci-app-nettask.git package/nettask
 
@@ -32,7 +32,7 @@ git clone https://github.com/EOYOHOO/rkp-ipid.git package/rkp-ipid
 git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 git clone https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom package/luci-theme-infinityfreedom
 git clone https://github.com/sirpdboy/netspeedtest.git package/netspeedtest
-git clone https://github.com/sirpdboy/luci-app-poweroffdevice.git package/luci-app-poweroffdevice
+#git clone https://github.com/sirpdboy/luci-app-poweroffdevice.git package/luci-app-poweroffdevice
 
 #修改闪存为256M版本(这是针对原厂128闪存来的，但又要编译256M固件来的）
 #sed -i 's/<0x580000 0x7200000>/<0x580000 0xee00000>/g' target/linux/mediatek/files-5.4/arch/arm64/boot/dts/mediatek/mt7981-cmcc-rax3000m.dts
