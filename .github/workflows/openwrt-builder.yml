@@ -8,6 +8,10 @@
 #
 # This is free software, licensed under the MIT License.
 # See /LICENSE for more information.
+#  REPO_URL: https://github.com/VIKINGYFY/immortalwrt
+#  REPO_BRANCH: owrt
+#  FEEDS_CONF: imm-feeds.conf.default
+#  CONFIG_FILE: Imm-JDG_AX6600_250311_v13.config
 #
 
 name: OpenWrt Builder
@@ -22,10 +26,10 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/VIKINGYFY/immortalwrt
-  REPO_BRANCH: owrt
-  FEEDS_CONF: imm-feeds.conf.default
-  CONFIG_FILE: Imm-JDG_AX6600_250311_v13.config
+  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_BRANCH: master
+  FEEDS_CONF: feeds.conf.default
+  CONFIG_FILE: Tr3000-Noua2f.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
