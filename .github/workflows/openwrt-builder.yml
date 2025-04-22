@@ -26,7 +26,7 @@ on:
         default: 'false'
 
 env:
-  REPO_URL: https://github.com/coolsnowwolf/lede
+  REPO_URL: https://github.com/LiBwrt/openwrt-6.x
   REPO_BRANCH: master
   FEEDS_CONF: news-feeds.conf.default
   CONFIG_FILE: JDG_AX6600_250423_v1_new.config
