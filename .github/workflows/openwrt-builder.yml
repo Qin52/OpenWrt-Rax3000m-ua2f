@@ -17,11 +17,16 @@
 name: OpenWrt Builder
 
 on:
+  push:
+    paths:
+      - '**.config'
+      - '**/diy-part1.sh'
+      - '**/diy-part2.sh'
   repository_dispatch:
   workflow_dispatch:
     inputs:
       ssh:
-        description: 'SSH connection to Actions'
+        description: 'SSH connection to Actions's
         required: false
         default: 'false'
 
@@ -29,7 +34,7 @@ env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
   FEEDS_CONF: feeds.conf.default
-  CONFIG_FILE: TR3000_ua2f.config
+  CONFIG_FILE: TR3000_ua2f_v2.config
   DIY_P1_SH: diy-part1.sh
   DIY_P2_SH: diy-part2.sh
   UPLOAD_BIN_DIR: false
