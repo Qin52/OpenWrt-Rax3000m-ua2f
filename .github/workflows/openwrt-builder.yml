@@ -17,11 +17,6 @@
 name: OpenWrt Builder
 
 on:
-  push:
-    paths:
-      - '**.config'
-      - '**/diy-part1.sh'
-      - '**/diy-part2.sh'
   repository_dispatch:
   workflow_dispatch:
     inputs:
