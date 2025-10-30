@@ -19,6 +19,9 @@ sed -i 's/LEDE/Tr3000/g' package/base-files/files/bin/config_generate
 #sed -i 's/LEDE/N60Pro/g' package/base-files/files/bin/config_generate
 #sed -i 's/ImmortalWrt/N60Pro/g' package/base-files/files/bin/config_generate
 
+#解决冲突问题
+sed -i 's/iperf3-ssl[[:space:]]*//g' openwrt/target/linux/x86/Makefile
+
 # Modify default theme
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 
